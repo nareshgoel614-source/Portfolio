@@ -25,18 +25,25 @@
 <!-- navbar start -->
  <nav class="nav1top">
   <div class="container">
-    <div class="mc">
+    <div class="mc">      
       <div class="logo">
         <a href=""><img src="img/logo.png" alt=""></a>
       </div>
+
+      <!-- HAMBURGER -->
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+
       <div class="nav-link">
         <ul class="ull">
-          <li><a class="fi active" href="#">Home</a></li>
-          <li><a class="fi" href="#">About</a></li>
-          <li><a class="fi" href="#">Skills</a></li>
-          <li><a class="fi" href="#">Projects</a></li>
-          <li><a class="fi" href="#">Resume/CV</a></li>
-          <li><a class="fi" href="#">Contact</a></li>
+          <li><a class="fi active" href="#home">Home</a></li>
+          <li><a class="fi" href="#about">About</a></li>
+          <li><a class="fi" href="#skills">Skills</a></li>
+          <li><a class="fi" href="#projects">Projects</a></li>
+          <li><a class="fi" href="#resume">Resume/CV</a></li>
+          <li><a class="fi" href="#contact">Contact</a></li>
           <a class="fi" href="https://wa.me/917973560220"><button type="button" class="btn-floating whatsapp"><i class="fa-brands fa-whatsapp"></i></button></a>
         </ul>
       </div>
@@ -46,7 +53,7 @@
 <!-- navbar end -->
 
 <!-- section 1 start -->
-<section class="sec-1">
+<section class="sec-1" id="home">
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
@@ -56,7 +63,7 @@
 I enjoy turning creative ideas into professional digital solutions.</p>
           <div class="text-right">
             <button type="button" class="btn bt-1 btn-secondary">Hire Me <i class="fa-solid fa-arrow-right"></i></button>
-            <button type="button" class="btn bt-2 btn-outline-secondary">View Projects <i class="fa-solid fa-folder-open"></i></button>
+            <button type="button" class="btn bt-2 h2obt-2 btn-outline-secondary">View Projects <i class="fa-solid fa-folder-open"></i></button>
           </div>
         </div>
       </div>
@@ -91,7 +98,7 @@ I enjoy turning creative ideas into professional digital solutions.</p>
 <!-- section 1 end -->
 
 <!-- section 2 start -->
-  <section class="sec-2">
+  <section class="sec-2" id="about">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -106,7 +113,7 @@ I enjoy turning creative ideas into professional digital solutions.</p>
             <p>I’m a passionate Web & WordPress Developer with 6+ months of experience creating modern, responsive, and user-friendly websites. I specialize in building clean UI designs, landing pages, and professional business websites that deliver smooth performance and engaging user experiences. I enjoy turning creative ideas into functional and visually attractive digital solutions.</p>
             <div class="text-right">
             <button type="button" class="btn bt-1 btn-secondary">View Projects <i class="fa-solid fa-folder-open"></i></button>
-            <button type="button" class="btn bt-2 btn-outline-secondary">Contact Me <i class="fa-regular fa-circle-user"></i></button>
+            <button type="button" class="btn bt-2 h2obt-2 btn-outline-secondary">Contact Me <i class="fa-regular fa-circle-user"></i></button>
           </div>
           </div>
         </div>
@@ -116,7 +123,7 @@ I enjoy turning creative ideas into professional digital solutions.</p>
 <!-- section 2 end -->
 
 <!-- section 3 start -->
-  <section class="sec-3">
+  <section class="sec-3" id="skills">
     <div class="container">
       <div class="row">
         <div class="sec-3-tx col-lg-12">
@@ -219,14 +226,14 @@ I enjoy turning creative ideas into professional digital solutions.</p>
 <!-- section 3 end -->
 
 <!-- section 4 start -->
-  <section class="sec-4">
+  <section class="sec-4" id="projects">
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
           <div class="sec4bx1">
             <h1>Here are some of the projects I have built using <span>HTML, CSS, Bootstrap, JavaScript and WordPress.</span></h1>
             <p>A collection of projects that showcase my skills in web development, responsive design, and modern user interface creation.</p>
-            <a href="">See My Projects <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="m0btn">See My Projects <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="col-lg-6 offest">
@@ -259,7 +266,7 @@ I enjoy turning creative ideas into professional digital solutions.</p>
 <!-- section 4 end -->
 
 <!-- section 5 start -->
-<section class="sec-5">
+<section class="sec-5" id="resume">
   <div class="container">
     <div class="sec5-b1">
       <div class="row sec5-b1">
@@ -294,7 +301,7 @@ I enjoy turning creative ideas into professional digital solutions.</p>
 
 
 <!-- section 6 start -->
-<section class="sec-6">
+<section class="sec-6" id="contact">
   <div class="container">
     <div class="sec6-b1">
       <div class="row">
@@ -308,12 +315,13 @@ I enjoy turning creative ideas into professional digital solutions.</p>
         </div>
         <div class="col-lg-6">
           <div class="sec6-box2">
-            <form class="form-section">
+            <form class="form-section" action="https://formsubmit.co/nareshgoel614@gmail.com" method="POST">
+              <input type="hidden" name="access_key" value="44676577-7a49-4947-9b60-8330fd9f6661">
               <input type="text" placeholder="Full Name">
               <input type="email" placeholder="Email Address">
               <input type="text" placeholder="Mobile No.">
               <textarea placeholder="Tell us a bit about your project..."></textarea>
-              <a href="#">Submit</a>
+              <button type="submit" class="haibt"  value="Send Message">Send Message</button>
             </form>
           </div>
         </div>

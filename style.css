@@ -4,8 +4,28 @@
     margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* navbar css start */
+
+
+.ull li a.active {
+  color: #00C6FF;
+  text-underline-offset: 8px;
+  transition: 0.3s;
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
 
 .nav1top{
   border-bottom: none;
@@ -150,6 +170,7 @@
   line-height: 20px;
   text-transform: capitalize;
   padding-inline: 35px;
+  text-decoration: none;
   height: 43px;
   width: 172px;
   padding: 10px 24px;
@@ -252,7 +273,7 @@
 
 .sec-2{
   background-color: #141414;
-  background-image: url(../img/secbg.png) !important;
+  background-image: url(img/secbg.png) !important;
   position: relative;
   padding: 80px 40px;
   background-size: cover !important;
@@ -313,10 +334,6 @@
 
 .offest{
   margin-left: 106px;
-  overflow: auto;
-  height: 566px ;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 .sec2bimg img{
@@ -514,7 +531,7 @@
 
 .sec-4{
   background-color: #141414;
-  background-image: url(../img/secbg.png) !important;
+  background-image: url(img/secbg.png) !important;
   position: relative;
   padding: 100px 40px 20px 40px;
   background-size: cover !important;
@@ -552,9 +569,10 @@
     margin-bottom: 32px;
 }
 
-.sec4bx1 a{
+.sec4bx1 .m0btn{
   background: #00C6FF !important;
   text-decoration: none;
+  width: 100% !important;
       font-weight: 600;
     border: 0 !important;
     font-size: 16px;
@@ -598,10 +616,6 @@
 
 .offest{
   margin-left: 106px;
-  overflow: auto;
-  height: 566px ;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 .sec-4-content{
@@ -778,7 +792,7 @@
     background: #141414;
     position: relative;
     padding: 100px 20px;
-    background-image: url("../img/secbg.png");
+    background-image: url(img/secbg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -977,18 +991,20 @@ textarea {
   resize: none;
 }
 
-.form-section a{
+.form-section .haibt{
   background: #00D8E6;
   color: white;
   border: 1px solid #00D8E6;
   font-weight: 600;
+  display: block;
   font-size: 16px;
+  border-radius: 6px;
   text-decoration: none;
   line-height: 20px;
   text-transform: capitalize;
   padding-inline: 35px;
-  height: 43px;
-  width: 172px;
+  width: 100%;
+  text-align: center;
   padding: 10px 24px;
 }
 
@@ -1023,4 +1039,232 @@ footer{
 
 .footr a img{
     width: 182px;
+}
+
+
+/* responcive my portfolio site */
+
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+
+.container{
+  width: 100%;
+}
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-link {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #000;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav-link.active {
+    display: block;
+  }
+
+  .ull {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .ull li {
+    text-align: center;
+  }
+
+  .whatsapp {
+    margin: 15px auto;
+  }
+
+.sec-1{
+  padding: 160px 20px 100px 20px;
+}
+
+.h1t h1{
+  font-size: 33px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.h1t p{
+    text-align: center;
+}
+
+.text-right .btn{
+  width: 100%;
+}
+
+.h2obt-2 {
+    margin: 20px 0 0 0;
+}
+
+.hello {
+    margin: 40px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.bx-2{
+    margin-top: 0;
+}
+
+.bx-3{
+  margin:0px;
+}
+
+.home-box {
+    width: 100%;
+}
+
+
+.sec-2{
+  padding: 80px 20px;
+}
+
+.sec2bimg img {
+    width: 100%;
+}
+
+.sec2bx1{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.sec2bx1 h1{
+  font-size: 33px;
+}
+
+.sec-3{
+  padding: 80px 20px;
+}
+
+.html1, .cs{
+  margin-bottom: 24px;
+}
+
+.js{
+  margin-top: -24px;
+}
+
+.sec-4{
+  padding: 100px 20px 20px 20px;
+}
+
+.sec4bx1 h1{
+  text-align: center;
+  font-size: 32px;
+}
+
+.sec4bx1 p{
+  text-align: center;
+}
+
+.sec4bx1 .m0btn{
+  margin: 0 auto !important;
+  display: block;
+  text-align: center;
+  width: 100% !important;
+}
+
+.offest{
+  margin: 40px 0 0 0 !important;
+}
+
+.proj-box, .proj-box2{
+  width: 100%;
+}
+
+.proj-box img{
+  width: 100%;
+}
+
+.proj-box2 img{
+  width: 100%;
+}
+
+.sec-5{
+  padding: 50px 20px;
+}
+
+.onl-sec5{
+  text-align: center;
+}
+
+.onl-sec5 h1{
+  font-size: 27px;
+  line-height: 40px;
+}
+
+.onl-sec5 p {
+  font-size: 15px;
+}
+
+.sec-mpw {
+    display: none;
+}
+
+.sec-lbox {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+a.bt01-1 {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.resum-img{
+  margin-top: 40px;
+}
+
+.resum-img img {
+    width: 100% !important;
+    height: 100%;
+}
+
+.sec-6{
+  padding: 50px 20px;
+}
+
+.onl-sec6 h1{
+  text-align: center;
+    font-size: 29px;
+    line-height: 45px;
+}
+
+.onl-sec6 p{
+      font-size: 15px;
+    text-align: center;
+}
+
+.form-section {
+    padding: 0px 0px;
+}
+
+.form-section .haibt{
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.footr h3{
+  font-size: 10px;
+  margin: 0;
+}
+
+.footr a img{
+  width: 125px;
+}
+
 }
