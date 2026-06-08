@@ -321,8 +321,21 @@ I enjoy turning creative ideas into professional digital solutions.</p>
               <input type="email" placeholder="Email Address">
               <input type="text" placeholder="Mobile No.">
               <textarea placeholder="Tell us a bit about your project..."></textarea>
-              <button type="submit" class="haibt"  value="Send Message">Send Message</button>
+
+              <button type="button" class="haibt"  onclick="showPopup()">Send Message</button>
             </form>
+            <div class="popup" id="popup">
+  <div class="popup-box">
+    <h3>Form Currently Unavailable</h3>
+    <p>Please click the WhatsApp button below to contact me directly.</p>
+
+    <a href="https://wa.me/917973560220" target="_blank" class="whatsapp-btn">
+      Chat on WhatsApp
+    </a>
+
+    <button onclick="closePopup()" class="close-btn">Close</button>
+  </div>
+</div>
           </div>
         </div>
       </div>

@@ -1213,6 +1213,49 @@ footer{
 }
 
 
+
+
+
+
+
+
+
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+  background: #fff;
+  color: #000;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 350px;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background: #25D366;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.close-btn {
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+
 /* responcive my portfolio site */
 
 
@@ -1436,6 +1479,71 @@ a.bt01-1 {
 
 .footr a img{
   width: 125px;
+}
+
+
+
+
+
+.proj-txt1 h1{
+  font-size: 44px;
+}
+
+.s1{
+  min-height: 80vh;
+}
+
+.prj-text {
+    flex-direction: column;
+}
+
+.prj-div h2{
+  font-size: 32px;
+  text-align: center;
+}
+
+.prj-text img{
+  width: 100%;
+}
+
+.bnt{
+  width: 100%;
+}
+
+.bnt h1 {
+    font-size: 32px;
+}
+
+
+     .az {
+        justify-content: left;
+        gap: 8px;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .az h1{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .az h2{
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+
+.s3{
+  padding: 80px 20px;
+}
+
+.mnz h1{
+  font-size: 34px;
+}
+
+.card{
+  margin-bottom: 30px;
 }
 
 }
